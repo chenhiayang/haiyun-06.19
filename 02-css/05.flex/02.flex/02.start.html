@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+
+        * {
+            margin: 0; padding: 0;
+        }
+
+
+        .border {
+            border: 1px red solid;
+        }
+
+        #container {
+
+            margin: 20px;
+
+            height: 500px;
+            width: 500px;
+
+
+            display: flex;
+            flex-flow: column wrap;    /*[  方向 , 换行 ]*/
+
+        }
+
+        .items {
+
+            height: 100px;
+            width: 100px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="container" class="border">
+    <div class="items border">A</div>
+    <div class="items border">B</div>
+    <div class="items border">C</div>
+    <div class="items border">A</div>
+    <div class="items border">B</div>
+    <div class="items border">C</div>
+</div>
+
+</body>
+</html>

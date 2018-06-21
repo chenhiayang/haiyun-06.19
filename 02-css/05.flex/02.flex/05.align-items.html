@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+
+        * {
+            margin: 0; padding: 0;
+        }
+
+
+        .border {
+            border: 1px red solid;
+        }
+
+        #container {
+
+            margin: 20px;
+
+            height: 500px;
+            width: 700px;
+
+        }
+
+        .items {
+
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: gold;
+
+        }
+
+
+        .xy-center {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;  /* 配置横向布局策略 */   /*  flex-start ; flex-end ; center ; space-between ; space-around */
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="container" class="border xy-center">
+
+    <div class="items xy-center">拆</div>
+
+</div>
+
+</body>
+</html>
