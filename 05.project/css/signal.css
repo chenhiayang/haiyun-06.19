@@ -35,6 +35,12 @@
 #signal-right {
     height: 36px;
     flex: 1;
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 /* 左中右 : end  */
 
@@ -87,6 +93,51 @@
 
 /* 左侧细节 : end */
 
+
+
+
+
+
+
+/* 右侧细节 : start */
+
+#battery_area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2px;
+}
+
+#battery_body {
+    height: 14px;
+    width: 36px;
+    border: 1px solid #BDBDBD;
+
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+
+}
+
+#battery_inset {
+
+    height: 12px;
+    width: 14px;
+    background-color: white;
+    margin-left: 1px;
+}
+
+#battery_header {
+    height: 6px;
+    width: 2px;
+    background-color: #BDBDBD;
+    border-radius: 0px 1px 1px 0px;
+}
+
+
+
+
+/* 右侧细节 : end */
 
 
 
