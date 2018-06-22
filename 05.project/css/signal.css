@@ -109,8 +109,8 @@
 }
 
 #battery_body {
-    height: 14px;
-    width: 36px;
+    height: 12px;
+    width: 30px;
     border: 1px solid #BDBDBD;
 
     display: flex;
@@ -121,14 +121,14 @@
 
 #battery_inset {
 
-    height: 12px;
-    width: 14px;
+    height: 10px;
+    width: 12px;
     background-color: white;
     margin-left: 1px;
 }
 
 #battery_header {
-    height: 6px;
+    height: 5px;
     width: 2px;
     background-color: #BDBDBD;
     border-radius: 0px 1px 1px 0px;
