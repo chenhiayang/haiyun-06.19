@@ -32,3 +32,12 @@
 
 
 }
+
+.x-left_y-center {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
