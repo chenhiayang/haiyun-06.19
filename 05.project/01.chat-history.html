@@ -76,7 +76,11 @@
 
             <div id="title_center" class=" xy-center">XXX群(11)</div>
 
-            <div id="title_right" class="x-right_y-center">➕</div>
+            <div id="title_right" class="x-right_y-center ">
+
+                <div id="popMenu"></div>
+
+            </div>
 
 
         </div>
@@ -110,7 +114,7 @@
                     <div class="item-box ">
 
                         <div class="item-up ">
-                            <div class="item-up-nickname  x-left_y-center">Tom</div>
+                            <div class="item-up-nickname  x-left_y-center">BootStrap</div>
                             <div class="item-up-lastSendTime  x-right_y-center">1分钟前</div>
                         </div>
                         <div class="item-down ">
@@ -132,7 +136,7 @@
                     <div class="item-box ">
 
                         <div class="item-up ">
-                            <div class="item-up-nickname  x-left_y-center">Tom</div>
+                            <div class="item-up-nickname  x-left_y-center">jQuery</div>
                             <div class="item-up-lastSendTime  x-right_y-center">1分钟前</div>
                         </div>
                         <div class="item-down ">
@@ -163,10 +167,41 @@
 
 
 
-        <div id="menu"></div>
+        <div id="menu">
+
+            <div class=""></div>
+            <div class=""></div>
+            <div class="" style="background-image: url(img/发现.svg)"></div>
+            <div class=""></div>
+            
+            
+        </div>
 
     </div>
 
 
 </body>
 </html>
+
+
+
+<script src="js/frame/jquery.js"></script>
+
+<script>
+
+
+    $(function(){
+
+        $("#popMenu").hide();
+
+        $("#title_right").click(function(){
+
+            $("#popMenu").toggle();
+
+        })
+
+
+
+    })
+
+</script>
