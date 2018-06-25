@@ -138,11 +138,21 @@
 
 @keyframes charge {
 
-    from {
+    0% {
         width: 1px;
+        background-color: red;
     }
-    to{
-        width: 29px;
+    20% {
+        width: 6px;
+        background-color: darkgoldenrod;
+    }
+    80%{
+        width: 24px;
+        background-color: greenyellow;
+    }
+    100%{
+        width: 28px;
+        background-color: greenyellow;
     }
 
 }
