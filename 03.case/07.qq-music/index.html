@@ -17,24 +17,39 @@
 				font-size: 16px;
 				font-family: "微软雅黑";
 			}
+
+
+			.playing {
+				border-left: 4px solid #4C4A48;
+				background-color: #9E9E9E;
+				border-radius: 0px 6px 6px 0px;
+				width: 196px;
+			}
+
+
+
 		</style>
 
 	</head>
 
 	<body>
 
-		<audio controls="controls" id="player" autoplay="autoplay"></audio>
-		<br>
+		<audio controls="controls" id="player" autoplay="autoplay" ></audio>
+
+		<br><br><br>
 
 		<div id="curr"></div>
 
-		<input type="button" value="上一首" id="prev"/>
+		<!--<input type="button" value="上一首" id="prev"/>-->
 		<input type="button" value="下一首" id="next" />
 
 		<hr />
 		<div id="list">
 			<div class="item" data-source="music/Journey.mp3">Journey</div>
 			<div class="item" data-source="music/My Belief.mp3">My Belief</div>
+			<div class="item" data-source="music/醉赤壁.mp3">醉赤壁</div>
+			<div class="item" data-source="music/醉赤壁.mp3">醉赤壁</div>
+			<div class="item" data-source="music/醉赤壁.mp3">醉赤壁</div>
 			<div class="item" data-source="music/醉赤壁.mp3">醉赤壁</div>
 		</div>
 
