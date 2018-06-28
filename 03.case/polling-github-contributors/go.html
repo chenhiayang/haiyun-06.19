@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 80%;
+            min-height: 300px;
+            max-height: 700px;
+            overflow: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container"></div>
+
+
+
+</body>
+</html>
+
+<script src="../../resources/js/jquery.js"></script>
+
+<script>
+
+
+    $(function(){
+
+      var count = 0;
+
+      var url = 'https://api.github.com/repos/neuedu-tj/test-github-webhook/stats/contributors?date='+new Date();
+
+      setInterval(function(){
+
+          $.ajax({
+              url : url ,
+              method : 'get' ,
+              dataType : 'json',
+              success : function(result) {
+
+                  var week = result[0].weeks;
+
+                  var info = '';
+                  for(var i = 0 ; i<week.length ; i++ ) {
+                      var week_count = i+1;
+                      var add = week[i].a;
+                      var remove = week[i].d;
+
+
+                      info += 'week : '+ week_count + ' ; add : ' +add+ '; remove : ' + remove + ' ; date : ';
+                  }
+
+                  var div = $("<div> count : "+ count + "<br>" + info +"</div><br><hr>")
+
+                  $("#container").append(div)
+
+              }
+          })
+            count++;
+      }, 2000)
+
+
+
+    })
+
+</script>
