@@ -24,6 +24,10 @@
             display: none;
         }
 
+        .item {
+            border: 1px solid red;
+        }
+
 
     </style>
 
@@ -67,12 +71,17 @@
                       var remove = week[i].d;
 
 
-                      info += 'week : '+ week_count + ' ; add : ' +add+ '; remove : ' + remove + ' ; date : ';
+                      info += 'week : '+ week_count + ' ; add : ' +add+ '; remove : ' + remove +"<br>";
+
+
+
                   }
+                  var div_count = $("<div>第" + (count+1) + "次请求</div>")
+                  var div = $("<div class='item'> "+ info +"</div><br>")
 
-                  var div = $("<div> count : "+ count + "<br>" + info +"</div><br><hr>")
-
+                  $("#container").append(div_count)
                   $("#container").append(div)
+
 
               }
           })
