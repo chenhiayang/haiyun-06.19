@@ -52,41 +52,39 @@
 
       var url = 'https://api.github.com/repos/neuedu-tj/haiyun-06.19/stats/contributors?date='+new Date();
 
-      var haha = '';
-
-      setInterval(function(){
-
-          $.ajax({
-              url : url ,
-              method : 'get' ,
-              dataType : 'json',
-              success : function(result) {
-
-                  var week = result[0].weeks;
-
-                  var info = '';
-                  for(var i = 0 ; i<week.length ; i++ ) {
-                      var week_count = i+1;
-                      var add = week[i].a;
-                      var remove = week[i].d;
-
-
-                      info += 'week : '+ week_count + ' ; add : ' +add+ '; remove : ' + remove +"<br>";
-
-
-
-                  }
-                  var div_count = $("<div>第" + (count+1) + "次请求</div>")
-                  var div = $("<div class='item'> "+ info +"</div><br>")
-
-                  $("#container").append(div_count)
-                  $("#container").append(div)
-
-
-              }
-          })
-            count++;
-      }, 2000)
+      // setInterval(function(){
+      //
+      //     $.ajax({
+      //         url : url ,
+      //         method : 'get' ,
+      //         dataType : 'json',
+      //         success : function(result) {
+      //
+      //             var week = result[0].weeks;
+      //
+      //             var info = '';
+      //             for(var i = 0 ; i<week.length ; i++ ) {
+      //                 var week_count = i+1;
+      //                 var add = week[i].a;
+      //                 var remove = week[i].d;
+      //
+      //
+      //                 info += 'week : '+ week_count + ' ; add : ' +add+ '; remove : ' + remove +"<br>";
+      //
+      //
+      //
+      //             }
+      //             var div_count = $("<div>第" + (count+1) + "次请求</div>")
+      //             var div = $("<div class='item'> "+ info +"</div><br>")
+      //
+      //             $("#container").append(div_count)
+      //             $("#container").append(div)
+      //
+      //
+      //         }
+      //     })
+      //       count++;
+      // }, 2000)
 
 
     })
